@@ -34,7 +34,7 @@ nohup python send_to_iothub.py &
 
 ⸻
 
-#@ Notes
+## Notes
 	•	Telemetry includes:
 	•	cpu_percent
 	•	temperature_celsius
