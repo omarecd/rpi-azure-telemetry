@@ -1,40 +1,40 @@
 
-Raspberry Pi Telemetry to Azure IoT Hub
+# Raspberry Pi Telemetry to Azure IoT Hub
 
 This project sends CPU usage and temperature telemetry from a Raspberry Pi Zero 2 W to Azure IoT Hub using Python.
 It demonstrates how to establish a lightweight, always-on IoT data pipeline for monitoring system health.
 
 ⸻
 
-Features
+## Features
 	•	Real-time telemetry every 60 seconds
 	•	Secure connection using Azure IoT SDK
 	•	Compatible with any Raspberry Pi model
 
 ⸻
 
-Requirements
+## Requirements
 
 pip install azure-iot-device psutil python-dotenv
 
 
 ⸻
 
-Run the Script
+## Run the Script
 
 python send_to_iothub.py
 
 
 ⸻
 
-Optional: Run in Background
+## Optional: Run in Background
 
 nohup python send_to_iothub.py &
 
 
 ⸻
 
-Notes
+#@ Notes
 	•	Telemetry includes:
 	•	cpu_percent
 	•	temperature_celsius
@@ -47,7 +47,7 @@ az iot hub monitor-events --hub-name <your-hub-name> --output table
 
 ⸻
 
-Future Improvements
+## Future Improvements
 	•	Add MQTT integration (e.g., AllThingsTalk or Mosquitto)
 	•	Push telemetry to Azure Data Explorer or Microsoft Fabric
 	•	Create a Power BI dashboard for visualization
