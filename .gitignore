@@ -1,0 +1,17 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Logs and temporary outputs
+nohup.out
+*.log
+
+# Environment variables (contains secrets!)
+.env
+
+# OS metadata
+.DS_Store
