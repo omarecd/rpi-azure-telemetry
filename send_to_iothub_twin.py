@@ -26,7 +26,7 @@ from azure.iot.device import IoTHubDeviceClient, Message
 load_dotenv()
 conn_str = os.getenv("IOTHUB_CONNECTION_STRING")
 if not conn_str:
-    raise ValueError("❌ Missing IOTHUB_CONNECTION_STRING in .env file.")
+    raise ValueError("Missing IOTHUB_CONNECTION_STRING in .env file.")
 
 client = IoTHubDeviceClient.create_from_connection_string(conn_str)
 print("Connected to Azure IoT Hub.")
